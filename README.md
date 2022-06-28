@@ -1,5 +1,18 @@
-# Tom & Jerry
+# Tom and Jerry Classification
 using deep learning to classify Tom &amp; Jerry from images
+
+### 🚀 Goal
+Find Tom and Jerry in images with Convolutional Neural Network 
+
+### 🗃 [Data](https://www.kaggle.com/datasets/balabaskar/tom-and-jerry-image-classification?select=ground_truth.csv)
+This dataset contains more than 5478 images extracted from some of Tom & Jerry's show videos. Each image is labeled with "Tom only", "Jerry only", "Tom and Jerry", or "No Tom or Jerry". 
+
+### Approach 1:
+We built 2 seperate models for Tom and Jerry individually.
+
+
+
+
 # sentiment_analysis
 How social sentiment influence stock / crypto market
 
