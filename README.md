@@ -8,59 +8,20 @@ Find Tom and Jerry in images with Convolutional Neural Network
 This dataset contains more than 5478 images extracted from some of Tom & Jerry's show videos. Each image is labeled with "Tom only", "Jerry only", "Tom and Jerry", or "No Tom or Jerry". 
 
 ### Approach 1:
-We built 2 seperate models for Tom and Jerry individually.
+We built 2 seperate binary classifers for Tom and Jerry individually, and we trained each model for 10 epochs. 
+The Tom model produces a train accuracy of 99% and a validation accuracy of 93%. 
+The Jerry model produces a train accuracy of 99% and a validation accuracy of 91%. 
 
+<img width=350 src="img/tom_model.png">    <img width=340 src="img/jerry_model.png">
 
+### Approach 2:
+We labelled images with one of the 4 labels:
+* No Tom or Jerry = 0
+* Tom only = 1
+* Jerry only = 2
+* Tom and Jerry = 3
 
+We built a multi-class classifer for this setting, and we trained each model for 10 epochs. 
+The model produces a train accuracy of 97% and a validation accuracy of 80%. 
 
-# sentiment_analysis
-How social sentiment influence stock / crypto market
-
-### 📄 TODO List
-
-#### Stage 1. Data Pulling
-
-- [ ] ~~Twitter academic account~~ 
-- [x] Implement data fetching function
-  - `fetch.py` can only be used to retrieve CSV files, which may not be suitable for MongoDB.
-  - `retrieve_tweets_with_details.py` can be used to pull JSON data but requires modification.
-- [ ] Implement `Crontab` function
-
-
-### 🗃 Documentation
-
-* [social_sentiment_analysis.ipynb](https://github.com/summerzhang423/sentiment_analysis/blob/main/social_sentiment_analysis.ipynb): Initial testing.
-* [fetch.py](https://github.com/summerzhang423/sentiment_analysis/blob/main/fetch.py): Main script for fetching the data.
-* [fetch_util.py](https://github.com/summerzhang423/sentiment_analysis/blob/main/fetch_util.py): Implementations of the functions used in `fetch.py`.
-* [data/](https://github.com/summerzhang423/sentiment_analysis/tree/main/data): Directory for data files.
-* [retrieve_tweets_with_details.py](https://github.com/summerzhang423/sentiment_analysis/blob/main/retrieve_tweets_with_details.py): Diane's script for pulling JSON data.
-
-### 🚀 FAQ for `fetch.py`
-
-#### How to fetch the data?
-
-```bash
-$ python fetch.py 
-Successful wrote 500 records.
-```
-
-#### How to change the parameters for searching?
-
-Modify the values of the following variables in `fetch.py`.
-
-```python
-keyword = "btc"
-N = 500
-isTimeRange = False
-# The following time range must be given if `isTimeRange` is set to True
-since = None
-until = None
-```
-
-#### Why there's no `credential_pool` module?
-
-I chose to ignore this script because it is not smart to include secret keys in a public repo. So feel free to ask me for that or create your own `credential_pool` if you need.
-
--------------
-sentiment code reference: https://towardsdatascience.com/step-by-step-twitter-sentiment-analysis-in-python-d6f650ade58d
-
+<img width=340 src="img/combined_model.png">    
