@@ -1,5 +1,5 @@
 # Tom and Jerry Classification
-using deep learning to classify Tom &amp; Jerry from images
+<img width=300 src="img/jerry.jpg"> <img width=300 src="img/tom.jpg"> <img width=300 src="img/dogs.jpg">       
 
 ### 🚀 Goal
 Find Tom and Jerry in images with Convolutional Neural Network 
