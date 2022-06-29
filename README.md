@@ -15,7 +15,7 @@ The Jerry model produces a train accuracy of 99% and a validation accuracy of 91
 <img width=350 src="img/tom_model.png">    <img width=340 src="img/jerry_model.png">
 
 ### Approach 2:
-We labelled images with one of the 4 labels:
+We labelled each image with one of the 4 labels:
 * No Tom or Jerry = 0
 * Tom only = 1
 * Jerry only = 2
