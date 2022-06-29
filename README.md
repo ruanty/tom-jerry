@@ -1,5 +1,5 @@
 # Tom and Jerry Classification
-<img width=250 src="img/jerry.jpg"> <img width=250 src="img/tom.jpg"> <img width=250 src="img/dogs.jpg">       
+<img width=270 src="img/jerry.jpg"> <img width=270 src="img/tom.jpg"> <img width=270 src="img/dogs.jpg">       
 
 ### 🚀 Goal
 Find Tom and Jerry in images with Convolutional Neural Network 
