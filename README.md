@@ -7,6 +7,8 @@ Find Tom and Jerry in images with Convolutional Neural Network
 ### 🗃 [Data](https://www.kaggle.com/datasets/balabaskar/tom-and-jerry-image-classification?select=ground_truth.csv)
 This dataset contains more than 5478 images extracted from some of Tom & Jerry's show videos. Each image is labeled with "Tom only", "Jerry only", "Tom and Jerry", or "No Tom or Jerry". 
 
+Credit: [Kaggle: Bala Baskar](https://www.kaggle.com/balabaskar)
+
 ### Approach 1:
 We built 2 seperate binary classifers for Tom and Jerry individually, and we trained each model for 10 epochs. 
 The Tom model produces a train accuracy of 99% and a validation accuracy of 93%. 
