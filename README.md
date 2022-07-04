@@ -2,10 +2,11 @@
 <img width=270 src="img/jerry.jpg"> <img width=270 src="img/tom.jpg"> <img width=270 src="img/dogs.jpg">       
 
 ### 🚀 Goal
-Find Tom and Jerry in images with Convolutional Neural Network 
+Find Tom and Jerry in images with Convolutional Neural Network.
+Since Tom and Jerry are in radically different shapes in different frames, we applied different models to find the best approaches. 
 
 ### 🗃 [Data](https://www.kaggle.com/datasets/balabaskar/tom-and-jerry-image-classification?select=ground_truth.csv)
-This dataset contains more than 5478 images extracted from some of Tom & Jerry's show videos. Each image is labeled with "Tom only", "Jerry only", "Tom and Jerry", or "No Tom or Jerry". 
+This dataset contains 5478 images extracted from some of Tom & Jerry's show videos. Each image is labeled with "Tom only", "Jerry only", "Tom and Jerry", or "No Tom or Jerry". 
 
 Credit: [Kaggle: Bala Baskar](https://www.kaggle.com/balabaskar)
 
